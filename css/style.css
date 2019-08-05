@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+    url('../fonts/OpenSansRegular.woff2') format('woff2'),
+    url('../fonts/OpenSansRegular.woff') format('woff'),
+    url('../fonts/OpenSansRegular.ttf') format('truetype'),
+    url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    height: 100%;
+}
+
+header{
+    background-color: #24282f;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container{
+    max-width: 1099px;
+    margin: auto;
+}
+
+.container:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header .logo{
+    float: left;
+    margin-left: 6px;
+}
+
+header .logo img{
+     width: 100%;
+ }
+
+header nav ul{
+    float: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0 10px 33px;
+    border-bottom: 2px solid transparent;
+    font-family: 'OpenSansRegular';
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid #b5a263;
+}
+
+.banner{
+    background-image: url(../images/banner.png);
+    padding-top: 70px;
+    padding-bottom: 82px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 31px;
+    margin-bottom: 17px;
+
+}
+
+.container p{
+    color: white;
+    font-family: 'OpenSansRegular';
+    font-size: 11px;
+
+}
+
+.section2{
+    max-width: 888px;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 23px;
+}
+
+.section2 h2{
+    color: #24282f;
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section2 h2:after{
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: #b5a263;
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+}

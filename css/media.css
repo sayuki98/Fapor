@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 760px){
+    header ul{
+        width: 50%;
+        text-align: right;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+    .logo{
+        margin-top: 30px;
+    }
+}
