@@ -8,6 +8,36 @@
     url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
 }
 
+@font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../fonts/RalewaySemiBold.eot');
+    src: url('../fonts/RalewaySemiBold.eot') format('embedded-opentype'),
+    url('../fonts/RalewaySemiBold.woff2') format('woff2'),
+    url('../fonts/RalewaySemiBold.woff') format('woff'),
+    url('../fonts/RalewaySemiBold.ttf') format('truetype'),
+    url('../fonts/RalewaySemiBold.svg#RalewaySemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url('../fonts/RalewayMedium.eot');
+    src: url('../fonts/RalewayMedium.eot') format('embedded-opentype'),
+    url('../fonts/RalewayMedium.woff2') format('woff2'),
+    url('../fonts/RalewayMedium.woff') format('woff'),
+    url('../fonts/RalewayMedium.ttf') format('truetype'),
+    url('../fonts/RalewayMedium.svg#RalewayMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../fonts/RalewayBold.eot');
+    src: url('../fonts/RalewayBold.eot') format('embedded-opentype'),
+    url('../fonts/RalewayBold.woff2') format('woff2'),
+    url('../fonts/RalewayBold.woff') format('woff'),
+    url('../fonts/RalewayBold.ttf') format('truetype'),
+    url('../fonts/RalewayBold.svg#RalewayBold') format('svg');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +61,7 @@ header{
     margin: auto;
 }
 
-.container:after{
+.container:after, .section2:after, .managers:after{
     content: "";
     clear: both;
     display: block;
@@ -80,7 +110,7 @@ h1{
     color: #ffffff;
     font-size: 31px;
     margin-bottom: 17px;
-
+    font-family: 'RalewayBold';
 }
 
 .container p{
@@ -91,10 +121,11 @@ h1{
 }
 
 .section2{
-    max-width: 888px;
+    max-width: 889px;
     margin: auto;
     padding-top: 120px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 .section2 h2{
@@ -102,6 +133,7 @@ h1{
     font-size: 19px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'RalewaySemiBold';
 }
 
 .section2 h2:after{
@@ -112,4 +144,74 @@ h1{
     display: block;
     margin: auto;
     margin-top: 24px;
+}
+
+.section2 .managers{
+    max-width: 247px;
+    float: left;
+    margin-bottom: 33px;
+    margin-top: 26px;
+}
+
+.section2 .managers:nth-of-type(2){
+    margin: 26px 74px 33px 74px;
+}
+
+.section2 .managers img{
+    margin-bottom: 23px;
+    width: 100%;
+}
+.section2 .name{
+    float: left;
+}
+
+.name h3{
+    color: #232323;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'RalewayMedium';
+}
+
+.name span{
+    color: #b5a263;
+    font-size: 11px;
+    text-transform: capitalize;
+    font-family: 'OpenSansRegular';
+}
+
+.section2 .socials{
+    float: right;
+    padding-top: 5px;
+}
+
+.socials a{
+    display: inline-block;
+    width: 27px;
+    background-color: #dedede;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.socials i{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.socials a:nth-child(2){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section2 .button{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #24282f;
+    border: solid #24282f 1px;
+    text-decoration: none;
+    line-height: 39px;
+    min-width: 130px;
+    text-align: center;
+    border-radius: 20px;
 }
