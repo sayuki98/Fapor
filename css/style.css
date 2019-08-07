@@ -61,7 +61,7 @@ header{
     margin: auto;
 }
 
-.container:after, .section2:after, .managers:after{
+.container:after, .section2:after, .managers:after, .blocks_holder:after{
     content: "";
     clear: both;
     display: block;
@@ -214,4 +214,83 @@ h1{
     min-width: 130px;
     text-align: center;
     border-radius: 20px;
+}
+
+footer{
+    background-color: #24282f;
+}
+
+.info{
+    background-color: #2b2f35;
+    border: 1px solid #8b8d90;
+}
+
+.blocks_holder{
+    margin: auto;
+    max-width: 889px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+footer .block{
+    float: left;
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: #b5a263;
+    font-size: 11px;
+    font-family: 'OpenSansRegular';
+    padding-bottom: 22px;
+}
+
+footer .block p{
+    color: #6e7279;
+    font-size: 11px;
+    font-family: 'OpenSansRegular';
+}
+
+footer .form{
+    float: right;
+}
+
+footer .about{
+    max-width: 231px;
+    margin-right: 138px;
+}
+
+footer .contact{
+    max-width: 184px;
+}
+
+footer .contact p:first-of-type{
+    padding-bottom: 20px;
+}
+
+footer form{
+    max-width: 236px;
+}
+
+footer form input{
+    width: 100%;
+    line-height: 29px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    border: 1px solid #61656b;
+    background-color: transparent;
+    margin-bottom: 9px;
+    font-size: 11px;
+    color: #6e7279;
+    font-family: 'OpenSansRegular';
+}
+
+footer form button{
+    width: 100%;
+    background-color: #b5a263;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: 'OpenSansRegular';
+    border: none;
+    line-height: 29px;
 }
