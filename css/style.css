@@ -61,7 +61,7 @@ header{
     margin: auto;
 }
 
-.container:after, .section2:after, .managers:after, .blocks_holder:after{
+.container:after, .section2:after, .managers:after, .bottom:after, .blocks_holder:after{
     content: "";
     clear: both;
     display: block;
@@ -218,6 +218,7 @@ h1{
 
 footer{
     background-color: #24282f;
+
 }
 
 .info{
@@ -293,4 +294,36 @@ footer form button{
     font-family: 'OpenSansRegular';
     border: none;
     line-height: 29px;
+}
+
+footer .bottom{
+    padding-top: 13px;
+    padding-bottom: 12px;
+    max-width: 889px;
+    margin: auto;
+}
+
+footer .bottom p{
+    float: left;
+    color: #6e7279;
+    font-size: 9px;
+    padding-top: 10px;
+}
+
+footer .bottom a{
+    float: right;
+    border: 1px solid #6e7279;
+    color: #6e7279;
+    text-align: center;
+    width: 27px;
+    line-height: 27px;
+    border-radius: 14px;
+    font-size: 12px;
+    margin-left: 9px;
+}
+
+footer .bottom a:hover{
+    color: #ffffff;
+    background-color: #b5a263;
+    border-color: #b5a263;
 }
