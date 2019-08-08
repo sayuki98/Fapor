@@ -4,6 +4,24 @@
         padding-right: 15px;
     }
 
+    .section2 .managers, .section2 .managers:nth-of-type(2){
+        float: none;
+        margin: 26px auto 33px;
+    }
+
+    .owl-carousel {
+        width: 90%;
+    }
+
+    footer .info, footer .bottom{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer .about{
+        margin-right: 75px;
+    }
+
 }
 
 @media only screen and (max-width: 760px){
@@ -17,5 +35,28 @@
     }
     .logo{
         margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    footer .block, footer form{
+        float: none;
+    }
+
+    footer h4{
+        padding-top: 22px;
+        text-align: center;
+    }
+
+    footer .about, footer .contact, footer form{
+        max-width: 100%;
+    }
+
+    footer .about{
+        margin-right: 0;
+    }
+
+    .owl-carousel .owl-nav{
+        display: none;
     }
 }
