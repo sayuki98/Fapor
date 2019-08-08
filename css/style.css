@@ -38,6 +38,26 @@
     url('../fonts/RalewayBold.svg#RalewayBold') format('svg');
 }
 
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+    url('../fonts/OpenSansLight.woff2') format('woff2'),
+    url('../fonts/OpenSansLight.woff') format('woff'),
+    url('../fonts/OpenSansLight.ttf') format('truetype'),
+    url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSansSemibold.eot');
+    src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+    url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+    url('../fonts/OpenSansSemibold.woff') format('woff'),
+    url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+    url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -128,7 +148,7 @@ h1{
     text-align: center;
 }
 
-.section2 h2{
+.section2 h2, .section3 h2{
     color: #24282f;
     font-size: 19px;
     text-align: center;
@@ -163,6 +183,7 @@ h1{
 }
 .section2 .name{
     float: left;
+    text-align: left;
 }
 
 .name h3{
@@ -214,6 +235,77 @@ h1{
     min-width: 130px;
     text-align: center;
     border-radius: 20px;
+}
+
+.section3{
+    background-color: #f7f7f7;
+    padding-top: 93px;
+    padding-bottom: 91px;
+}
+
+.section3 h2:after{
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: #24282f;
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.owl-carousel{
+    max-width: 861px;
+    margin: auto;
+}
+
+.carousel{
+    max-width: 706px;
+    margin: auto;
+    padding-top: 51px;
+    text-align: center;
+}
+
+.owl-carousel .owl-item img{
+    width: auto;
+    margin: auto;
+    padding-bottom: 31px;
+}
+
+.carousel p{
+    font-size: 11px;
+    line-height: 19px;
+    padding-bottom: 35px;
+    font-family: 'OpenSansLight';
+}
+
+.carousel h3{
+    color: #b5a263;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    font-family: 'OpenSansSemibold';
+}
+
+.carousel span{
+    font-size: 11px;
+    font-family: 'OpenSansRegular';
+    text-transform: capitalize;
+}
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled{
+    display: block;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: -14px;
+    top: 99px;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    right: -14px;
+    top: 99px;
 }
 
 footer{
