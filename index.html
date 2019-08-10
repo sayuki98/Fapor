@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <script
@@ -16,6 +18,26 @@
     integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
     crossorigin="anonymous"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--<script>-->
+        <!--$( function() {-->
+            <!--$( "#dialog" ).dialog({-->
+                <!--autoOpen: false,-->
+                <!--show: {-->
+                    <!--effect: "blind",-->
+                    <!--duration: 1000-->
+                <!--},-->
+                <!--hide: {-->
+                    <!--effect: "explode",-->
+                    <!--duration: 1000-->
+                <!--}-->
+            <!--});-->
+
+            <!--$( "#opener" ).on( "click", function() {-->
+                <!--$( "#dialog" ).dialog( "open" );-->
+            <!--});-->
+        <!--} );-->
+    <!--</script>-->
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -87,7 +109,16 @@
             <a href="#" title="google-plus" target="_blank"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </div>
-    <a href="#" title="show all" class="button">show all</a>
+    <div id="dialog" title="forgot your password?">
+        <form action="" method="post">
+            <p>enter your<br>email</p>
+            <input type="email">
+            <button type="submit">reset password</button>
+        </form>
+        <p>or</p>
+        <a href="#"><i class="fab fa-facebook-f"></i>log in using facebook</a>
+    </div>
+    <a role="button" tabindex="0" title="show all" class="button" id="opener">show all</a>
 </section>
 <section class="section3">
 
