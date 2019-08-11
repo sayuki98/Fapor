@@ -22,6 +22,24 @@
         margin-right: 75px;
     }
 
+    #dialog p:first-child{
+        float: none;
+        text-align: center;
+    }
+
+    #dialog form input{
+        float: none;
+        width: 100%;
+    }
+
+    #dialog form button, #dialog a{
+        width: 100%;
+    }
+
+    #dialog span{
+        display: inline;
+    }
+
 }
 
 @media only screen and (max-width: 760px){
@@ -58,5 +76,10 @@
 
     .owl-carousel .owl-nav{
         display: none;
+    }
+
+    .ui-dialog .ui-dialog-content{
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
