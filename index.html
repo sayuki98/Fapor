@@ -19,32 +19,14 @@
     crossorigin="anonymous"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!--<script>-->
-        <!--$( function() {-->
-            <!--$( "#dialog" ).dialog({-->
-                <!--autoOpen: false,-->
-                <!--show: {-->
-                    <!--effect: "blind",-->
-                    <!--duration: 1000-->
-                <!--},-->
-                <!--hide: {-->
-                    <!--effect: "explode",-->
-                    <!--duration: 1000-->
-                <!--}-->
-            <!--});-->
 
-            <!--$( "#opener" ).on( "click", function() {-->
-                <!--$( "#dialog" ).dialog( "open" );-->
-            <!--});-->
-        <!--} );-->
-    <!--</script>-->
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
 </head>
 <body>
 <header>
 <div class="container">
     <a href="#" title="Fapor" target="_blank" class="logo"><img src="images/logo.png" alt="logo"></a>
-    <nav>
+    <nav class="desktop_menu">
         <ul>
             <li>
                 <a href="#">home</a>
@@ -63,6 +45,29 @@
             </li>
         </ul>
     </nav>
+    <div class="mobile_menu overlay">
+        <nav class="overlayMenu">
+            <ul role="menu">
+                <li>
+                    <a href="#" role="menuitem">home</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">about</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">service</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">portfolio</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navBurger" role="navigation" id="navToggle"></div>
+
 </div>
 </header>
 <section class="banner">
@@ -194,5 +199,16 @@
         <a href="#" title="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
     </div>
 </footer>
+<!--<script>-->
+
+    <!--$("#navToggle").click(function() {-->
+        <!--$(this).toggleClass("active");-->
+        <!--$(".overlay").toggleClass("open");-->
+        <!--// this line ▼ prevents content scroll-behind-->
+        <!--$("body").toggleClass("locked");-->
+    <!--});-->
+
+<!--</script>-->
+<script src="js/script.js"></script>
 </body>
 </html>
