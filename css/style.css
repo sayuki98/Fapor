@@ -89,6 +89,7 @@
 
 html {
     height: 100%;
+    overflow-x:hidden
 }
 
 header{
@@ -111,12 +112,7 @@ header{
 header .logo{
     float: left;
     margin-left: 6px;
-    animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
-}
-
-@keyframes bouncing{
-    0%  { transform: scale(1)}
-    100% {  transform: scale(1.5)}
+    animation: logo_appearing 2s both;
 }
 
 header .logo img{
@@ -132,6 +128,32 @@ header  nav ul li{
     display: inline-block;
     margin-left: 30px;
 }
+
+header  nav ul .item1{
+    animation: menu_fade 1s both;
+    animation-delay: 3s;
+}
+
+header  nav ul .item2{
+    animation: menu_fade 1s  both;
+    animation-delay: 2.5s;
+}
+
+header  nav ul .item3{
+    animation: menu_fade 1s  both;
+    animation-delay: 2s;
+}
+
+header  nav ul .item4{
+    animation: menu_fade 1s  both;
+    animation-delay: 1.5s;
+}
+
+header  nav ul .item5{
+    animation: menu_fade 1s  both;
+    animation-delay: 1s;
+}
+
 
 header  nav ul li a{
     color: #ffff;
@@ -159,28 +181,15 @@ h1{
     font-size: 31px;
     margin-bottom: 17px;
     font-family: 'RalewayBold';
-    animation: line 3s infinite;
-}
-
-@keyframes line {
-    0% {
-        margin-left: 0;
-    }
-
-    50%{
-        margin-left: 600px;
-    }
-
-    100%{
-        margin-left: 0;
-    }
+    animation: line 1s backwards linear;
 }
 
 .container p{
     color: white;
     font-family: 'OpenSansRegular';
     font-size: 11px;
-
+    animation: go_up 2s both;
+    position: relative;
 }
 
 .section2{
@@ -197,6 +206,8 @@ h1{
     text-align: center;
     text-transform: uppercase;
     font-family: 'RalewaySemiBold';
+    animation: go_down 1.5s both;
+    position: relative;
 }
 
 .section2 h2:after{
@@ -207,6 +218,8 @@ h1{
     display: block;
     margin: auto;
     margin-top: 24px;
+    animation: rotate 2s linear;
+    animation-iteration-count: 0.5;
 }
 
 .section2 .managers{
@@ -214,10 +227,20 @@ h1{
     float: left;
     margin-bottom: 33px;
     margin-top: 26px;
+    position: relative;
+}
+
+.section2 .managers:first-of-type{
+    animation: from_left 2s both;
+}
+
+.section2 .managers:last-of-type{
+    animation: from_right 2s both;
 }
 
 .section2 .managers:nth-of-type(2){
     margin: 26px 74px 33px 74px;
+    animation: from_center 2s both linear;
 }
 
 .section2 .managers img{
@@ -234,6 +257,9 @@ h1{
     font-size: 12px;
     text-transform: uppercase;
     font-family: 'RalewayMedium';
+    animation: manager_info 1s both;
+    animation-delay: 2s;
+    position: relative;
 }
 
 .name span{
@@ -241,6 +267,9 @@ h1{
     font-size: 11px;
     text-transform: capitalize;
     font-family: 'OpenSansRegular';
+    animation: manager_info 1s both;
+    animation-delay: 2.1s;
+    position: relative;
 }
 
 .section2 .socials{
@@ -254,14 +283,28 @@ h1{
     background-color: #dedede;
     border-radius: 13px;
     text-align: center;
+    position: relative;
+}
+.socials .fb{
+    animation: manager_social 2s backwards;
+    animation-delay: 2.2s;
+}
+.socials .tw{
+    animation: manager_social 2s backwards;
+    animation-delay: 2.3s;
+}
+.socials .gp{
+    animation: manager_social 2s backwards;
+    animation-delay: 2.4s;
 }
 
-.socials a:hover{
-    animation: rotate 1s;
+.socials span{
+    width: 27px;
+    display: inline-block;
 }
 
-@keyframes rotate {
-    0%{}
+.socials a span:hover, footer .bottom a:hover{
+    animation: rotate 0.5s both infinite linear;
 }
 
 .socials i{
@@ -287,6 +330,8 @@ h1{
     text-align: center;
     border-radius: 20px;
     position: relative;
+    animation: width_streching 2s backwards;
+
 }
 
 .section3{
@@ -309,6 +354,9 @@ h1{
 .owl-carousel{
     max-width: 861px;
     margin: auto;
+    animation: from_center 2s both linear;
+    animation-delay: 1s;
+    position: relative;
 }
 
 .carousel{
@@ -353,12 +401,16 @@ h1{
     position: absolute;
     left: -14px;
     top: 99px;
+    animation: from_left 2.2s both;
+    animation-delay: 1s;
 }
 
 .owl-carousel .owl-nav button.owl-next{
     position: absolute;
     right: -14px;
     top: 99px;
+    animation: from_right 2.2s both;
+    animation-delay: 1s;
 }
 
 footer{
@@ -368,7 +420,8 @@ footer{
 
 .info{
     background-color: #2b2f35;
-    border: 1px solid #8b8d90;
+    border-top: 1px solid #8b8d90;
+    border-bottom: 1px solid #8b8d90;
 }
 
 .blocks_holder{
@@ -388,12 +441,17 @@ footer h4{
     font-size: 11px;
     font-family: 'OpenSansRegular';
     padding-bottom: 22px;
+    animation: manager_info 1s both;
+    position: relative;
 }
 
 footer .block p{
     color: #6e7279;
     font-size: 11px;
     font-family: 'OpenSansRegular';
+    animation: manager_info 1s both;
+    animation-delay: 1s;
+    position: relative;
 }
 
 footer form{
@@ -411,6 +469,8 @@ footer .contact{
 
 footer .contact p:first-of-type{
     padding-bottom: 20px;
+    animation: manager_info 1s both;
+    animation-delay: 0.5s;
 }
 
 footer form{
@@ -428,6 +488,9 @@ footer form input{
     font-size: 11px;
     color: #6e7279;
     font-family: 'OpenSansRegular';
+    animation: manager_info 1s both;
+    animation-delay: 0.5s;
+    position: relative;
 }
 
 footer form button{
@@ -439,6 +502,9 @@ footer form button{
     font-family: 'OpenSansRegular';
     border: none;
     line-height: 29px;
+    animation: manager_info 1s both;
+    animation-delay: 1s;
+    position: relative;
 }
 
 footer .bottom{
@@ -446,6 +512,8 @@ footer .bottom{
     padding-bottom: 12px;
     max-width: 889px;
     margin: auto;
+    animation: go_up 2s both;
+    position: relative;
 }
 
 footer .bottom p{
